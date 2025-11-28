@@ -1,0 +1,165 @@
+body{
+  background-image:url(441b6154ecb408afa6d488f961f3ad75.jpg)
+}
+nav {
+  background-color: #dfa961f2; /* warna navbar */
+  padding: 15px 25px;        /* ruang dalam navbar */
+  border-bottom: 2px solid #e5e5e5;
+  position: fixed;
+  top: 10px;
+  width: 95%;
+  border-radius: 5px;
+  position: sticky;
+  top: 0;           /* sticks when reaching the top of screen */
+  z-index: 9999;    /* always above content */
+  margin-top: 3px;
+  transition: top 0.3s ease;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;     /* buang default margin browser */
+  padding: 0;    /* buang default padding browser */
+}
+
+
+.menu-item {
+  font-weight: 500;
+  padding-bottom: 0;
+  display: inline-block;
+  transform-origin: center; /* smooth scale */
+  width: 20%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.menu-item:hover {
+  color: rgb(59, 53, 44); /* warna pas hover */
+  background-color: pink;
+  transform: scale(1.08); /* 👈 INI YANG BIKIN AGAK MEMBESAR */
+  border-radius: 5px;
+}
+
+li.menu-item a{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background:pink;
+  padding: 10px 0;
+  list-style: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-width: 150px;
+  transition: all 0.25s ease;
+}
+.menu-item:hover .dropdown {
+  display: block;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown li {
+  padding: 10px 15px;
+}
+.dropdown li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+.dropdown li:hover {
+  background: burlywood;
+  color: whitesmoke;
+}
+.header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.header{
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 99999;
+  transition: transform 0.4s ease; /* smooth slide */
+}
+li#active{
+  background-color: rgb(252, 190, 200);
+  display: block;
+  display: flex;
+  align-items: center;        /* middle vertically */
+  justify-content: flex-start;  /* move text to the LEFT */
+}
+.menu-content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.side-images{
+  width: 250px;
+  object-fit: contain;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  top: 5px;
+  background-color: rgb(222, 184, 135, 0.9);   /* change to any color */
+  padding: 12px;               /* keeps images away from edges */
+  border-radius: 10px;         /* optional, just for aesthetic */
+}
+.left{
+  left: 5px;
+  height: fit-content;
+}
+.right{
+  right: 5px;
+  height: fit-content;
+}
+.side-images img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.main-content{
+  width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 70px;
+  background-color: rgb(245, 245, 245, 0.8);   /* change to any color */
+  padding: 10px;               /* keeps images away from edges */
+  border-radius: 10px;         /* optional, just for aesthetic */
+  height: fit-content;
+}
+
+/* bagian About Me! */
+p.biodata-Diri{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+img.Self-Potrait{
+    width: 230px;
+    height: 350px;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
